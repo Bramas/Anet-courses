@@ -42,16 +42,34 @@ public class Robot extends Node{
         move(Math.min(10, distance(target)));
     }
 
+
+    // Start the simulation
     public static void main(String[] args){
+
+        // Create the Topology (a plane of size 800x200)
 		Topology tp = new Topology(800, 200);
+        // Create the simulation window
+        new JViewer(tp);
+
+        // set the default node to be our Robot class 
+        // (When the user click in the simulation window,
+        //  a default node is automatically added to the topology)
 	    tp.setDefaultNodeModel(Robot.class);
+
+        // Robots cannot communicate
 	    tp.disableWireless();
+
+        //Here we remove the sensing range since the robots have unlimited visibility
 	    tp.setSensingRange(0);
-	    tp.setClockSpeed(500);
+
 	    for (int i = 0; i < 20; i++)
 	        tp.addNode(-1,-1);
-	    new JViewer(tp);
-	    tp.start();
+
+        //The clock click every 0.5 sec (so that you can see the evolution slowly)
+        tp.setClockSpeed(500);
+
+        // We pause the simulation 
+        // (to start it, you'll have to right click on the window and resume it)
 	    tp.pause();
     }
 }
