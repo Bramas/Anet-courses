@@ -46,8 +46,8 @@ public class Robot extends Node{
 	// Start the simulation
 	public static void main(String[] args){
 
-		// Create the Topology (a plane of size 800x200)
-		Topology tp = new Topology(800, 200);
+		// Create the Topology (a plane of size 800x400)
+		Topology tp = new Topology(800, 400);
 		// Create the simulation window
 		new JViewer(tp);
 
@@ -59,9 +59,10 @@ public class Robot extends Node{
 		// Robots cannot communicate
 		tp.disableWireless();
 
-		//Here we remove the sensing range since the robots have unlimited visibility
+		// Here we remove the sensing range since the robots have unlimited visibility
 		tp.setSensingRange(0);
 
+		// Add 20 Robots to the topology (with random positions)
 		for (int i = 0; i < 20; i++)
 			tp.addNode(-1,-1);
 
