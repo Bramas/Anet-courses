@@ -9,14 +9,10 @@ In the sequel we assumes the robots have a common coordinate system, orientation
 First download the boilerplate project to start with a simple running example.
 Open a terminal and execute the following command:
 
-    git clone --branch p1 https://github.com/Bramas/Anet-courses-scattering.git
+    git clone https://github.com/Bramas/Anet-courses-scattering.git
 
 Open the file Robot.java that contains the class representing a robot.
-The class robots extends from the default Node class. By default a Node does nothing, but receives a lot of event from the simulator. Check out the doc at
-
-    http://jbotsim.sourceforge.net/javadoc/index.html
-
-to see the list of methods. Events have the prefix 'on'. For instance `onMove()` is called each time the node moves.
+The class robots extends from the default Node class. By default a Node does nothing, but receives a lot of event from the simulator. Check out the doc at [http://jbotsim.sourceforge.net/javadoc/index.html](http://jbotsim.sourceforge.net/javadoc/index.html) to see the list of methods. Events have the prefix 'on'. For instance `onMove()` is called each time the node moves.
 Our class Robot overwrite three methods to handle the `onPreClock()`,  `onClock()` and `onPostClock()` that are triggered before, upon and after each clock pulse.
 
 __Question 1:__ Looking at the implementation, can you guess what phase of the execution of a robot each method is related to?
