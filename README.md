@@ -1,6 +1,6 @@
 # Anet-courses
 
 ```
-https://github.com/Bramas/Anet-courses-scattering.git
+https://github.com/Bramas/Anet-courses.git
 cd Anet-courses
 ```
