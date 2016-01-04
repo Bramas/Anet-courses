@@ -9,7 +9,8 @@ In the sequel we assumes the robots have a common coordinate system, orientation
 First download the boilerplate project to start with a simple running example.
 Open a terminal and execute the following command:
 
-    git clone https://github.com/Bramas/Anet-courses-scattering.git
+    git clone https://github.com/Bramas/Anet-courses.git
+    cd Anet-courses/TP1-Scattering
 
 Open the file Robot.java that contains the class representing a robot.
 The class robots extends from the default Node class. By default a Node does nothing, but receives a lot of event from the simulator. Check out the doc at [http://jbotsim.sourceforge.net/javadoc/index.html](http://jbotsim.sourceforge.net/javadoc/index.html) to see the list of methods. Events have the prefix 'on'. For instance `onMove()` is called each time the node moves.
