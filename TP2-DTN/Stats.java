@@ -1,5 +1,3 @@
-package jbotsim;
-
 import java.awt.*;
 import java.util.*;
 import java.util.List;
@@ -9,7 +7,7 @@ import jbotsim.*;
 
 public class Stats implements ClockListener {
 	
-	Topology tp;
+	private Topology tp;
 
 	public Stats(Topology tp) {
 		this.tp = tp;
@@ -20,14 +18,7 @@ public class Stats implements ClockListener {
         List<Node> nodes = tp.getNodes();
         for(Node node : nodes)
         {
-        	if(node instanceof SinkNode)
-        	{
-
-        	}
-        	else
-        	{
-        		
-        	}
+        	
         }
     }
 
