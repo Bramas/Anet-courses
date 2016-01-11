@@ -1,6 +1,8 @@
 # Anet-courses
 
+
+Download the second tudorial with this commandhttps://github.com/Bramas/Anet-courses.git
+
 ```
-https://github.com/Bramas/Anet-courses.git
-cd Anet-courses
+svn export https://github.com/Bramas/Anet-courses/trunk/TP2-DTN
 ```
