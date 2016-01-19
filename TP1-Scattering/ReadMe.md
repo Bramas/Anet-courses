@@ -40,9 +40,7 @@ __Question 6:__ To scatter the robot, can you modify the `onClock` method to cho
 
 Now we assume that the robots may not all share the same location. For a given robot r, a safe destination is a destination such that, the robots that do not share r's location cannot choose the same destination.
 
-[//]: # "__Question 7:__ given the positions of all robots, propose a method to find safe destinations for a particular robot."
-
-__Question 7:__ create a method `generateDestinations` that takes an integer `n` and return `n` safe destinations (that depends only on the attribute `locations` and on the position of the current robot).
+__Question 7:__ create a method `generateDestinations` that takes an integer `n` and return a list of `n` safe destinations (that depends only on the attribute `locations` and on the position of the current robot).
 
 __Question 8:__ modify the `onClock` method to choose a safe destination. You are allowed to use at most one random bit (obtained with the instruction `(new Random()).nextInt(2)`)
 
