@@ -1,8 +1,6 @@
 # Anet-courses
 
 
-Download the second tudorial with this command:
+[TP1: Mobile Robot Scattering](TP1-Scattering)
 
-```
-svn export https://github.com/Bramas/Anet-courses/trunk/TP2-DTN
-```
+[TP2: DTN](TP2-DTN)
