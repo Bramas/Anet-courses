@@ -1,7 +1,7 @@
 # ANET TP Scattering
 
 
-For this tutorial, you will use the simulator _jbotsim_ developed by Arnaud Casteig, to implement an algorithm that scatters a set of robots.
+For this tutorial, you will use the simulator _jbotsim_ developed by Arnaud Casteigts, to implement an algorithm that scatters a set of robots.
 In the sequel we assumes the robots have a common coordinate system, orientation and unit length and all the robots are synchronized.
 
 ## Getting Started
